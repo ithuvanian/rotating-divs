@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#left').hover(
+    $('.left').hover(
         function() {
             $(this).css('background', '#478532');
             $('body').css('background', '#fff');
@@ -10,7 +10,7 @@ $(document).ready(function() {
             $('body').css('background', '#656b7b');
             $('#container').css('transform', 'translateX(0)');
         });
-    $('#right').hover(
+    $('.right').hover(
         function() {
             $(this).css('background', '#8f3232');
             $('body').css('background', '#fff');
@@ -23,7 +23,7 @@ $(document).ready(function() {
             $('#container').css('transform', 'translateX(0)');
 
         });
-    $('#center').hover(
+    $('.center').hover(
         function() {
             $(this).css('background', '#414776');
             $('body').css('background', '#333');

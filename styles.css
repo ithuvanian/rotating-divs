@@ -1,7 +1,16 @@
+html, body {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    transition: all 600ms ease;
+  transition: all 600ms ease;
 }
 
 body {
@@ -10,7 +19,7 @@ body {
     overflow: hidden;
 }
 
-#frame {
+.frame {
     height: 100vh;
     width: 100vw;
     margin: 0 auto;
@@ -19,38 +28,40 @@ body {
     justify-content: center;
 }
 
-#container {
+.container {
     perspective: 1000px;
     display: flex;
     flex-direction: row;
 }
 
-#container div {
+.container div {
     color: #fff;
-    height: 50vh;
     width: 50vh;
     background: #333;
     margin: 0;
-    padding: 2vh;
+    padding: 4vh 2vh;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    text-align: justify;
     display: flex;
     align-items: center;
     overflow: hidden;
 }
 
-#left {
+.left {
     transform-origin: right center;
     transform: translateX(-10px) rotateY(-60deg);
 }
 
-#right {
+.right {
     transform-origin: left center;
     transform: translateX(10px) rotateY(60deg);
 }
 
-#left:hover {
+.left:hover {
     transform: translateX(-10px) rotateY(0deg);
 }
 
-#right:hover {
+.right:hover {
     transform: translateX(10px) rotateY(0deg);
 }
